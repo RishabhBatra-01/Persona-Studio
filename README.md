@@ -10,7 +10,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.0-646cff?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 
-[Live Demo](https://persona-studio.vercel.app) • [Documentation](docs/INDEX.md) • [Report Bug](https://github.com/yourusername/persona-studio/issues) • [Request Feature](https://github.com/yourusername/persona-studio/issues)
+[Live Demo](https://persona-studio.vercel.app) • [Report Bug](https://github.com/RishabhBatra-01/persona-studio/issues) • [Request Feature](https://github.com/RishabhBatra-01/persona-studio/issues)
 
 <img src="https://via.placeholder.com/1200x600/0A0E1A/3B82F6?text=Persona+Studio+Demo+Screenshot" alt="Persona Studio Demo" width="100%" />
 
@@ -117,7 +117,7 @@ Ensure you have the following installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/persona-studio.git
+git clone https://github.com/RishabhBatra-01/persona-studio.git
 
 # Navigate to project directory
 cd persona-studio
@@ -201,17 +201,20 @@ persona-studio/
 │   └── geminiService.ts    # Gemini API integration
 ├── utils/                   # Utility functions
 │   └── imageUtils.ts       # Image processing
-├── docs/                    # Documentation
-│   ├── CUSTOM_STYLE_GUIDE.md
-│   ├── DEPLOYMENT_AND_MONETIZATION_GUIDE.md
-│   ├── DEMO_SCRIPT.md
-│   ├── UX_IMPROVEMENTS_IMPLEMENTED.md
-│   └── VERCEL_DEPLOYMENT_GUIDE.md
 ├── App.tsx                  # Main application component
 ├── constants.ts             # Application constants
 ├── types.ts                 # TypeScript type definitions
 ├── theme.css                # Theme styles
-└── index.html               # HTML entry point
+├── index.html               # HTML entry point
+├── index.tsx                # Application entry point
+├── vite.config.ts           # Vite configuration
+├── tsconfig.json            # TypeScript configuration
+├── package.json             # Project dependencies
+├── SETUP.md                 # Detailed setup guide
+├── QUICKSTART.md            # Quick start guide
+├── CONTRIBUTING.md          # Contribution guidelines
+├── CHECKLIST.md             # Pre-push checklist
+└── LICENSE                  # MIT License
 ```
 
 ### Component Architecture
@@ -451,9 +454,9 @@ Built to democratize professional photography and make high-quality headshots ac
 
 ### Get in Touch
 
-[![GitHub](https://img.shields.io/badge/GitHub-@yourusername-181717?style=for-the-badge&logo=github)](https://github.com/yourusername)
-[![Email](https://img.shields.io/badge/Email-your.email@example.com-EA4335?style=for-the-badge&logo=gmail)](mailto:your.email@example.com)
-[![Twitter](https://img.shields.io/badge/Twitter-@yourhandle-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/yourhandle)
+[![GitHub](https://img.shields.io/badge/GitHub-@RishabhBatra--01-181717?style=for-the-badge&logo=github)](https://github.com/RishabhBatra-01)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rishabh_Batra-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rishabh-batra-6190841b3/)
+[![Email](https://img.shields.io/badge/Email-rishabhbatra81@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:rishabhbatra81@gmail.com)
 
 </div>
 
@@ -466,7 +469,7 @@ If you find Persona Studio helpful:
 - 💡 Suggest new features
 - 🤝 Contribute code
 - 📢 Share with others
-- ☕ [Buy me a coffee](https://buymeacoffee.com/yourusername)
+
 
 ---
 
@@ -499,18 +502,18 @@ If you find Persona Studio helpful:
 
 ## 📈 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/persona-studio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/persona-studio?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/persona-studio?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/persona-studio)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/persona-studio)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/persona-studio)
+![GitHub stars](https://img.shields.io/github/stars/RishabhBatra-01/persona-studio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/RishabhBatra-01/persona-studio?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/RishabhBatra-01/persona-studio?style=social)
+![GitHub issues](https://img.shields.io/github/issues/RishabhBatra-01/persona-studio)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/RishabhBatra-01/persona-studio)
+![GitHub last commit](https://img.shields.io/github/last-commit/RishabhBatra-01/persona-studio)
 
 ---
 
 <div align="center">
 
-### Made with ❤️ by [Your Name](https://github.com/yourusername)
+### Made with ❤️
 
 **[⬆ Back to Top](#-persona-studio)**
 
