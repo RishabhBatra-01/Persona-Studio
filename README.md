@@ -21,17 +21,14 @@
 <div align="center">
 
 ### Welcome Modal - First-Time Experience
-<img src="screenshots/welcome-modal.png" alt="Welcome Modal" width="100%" />
+<img src="screenshots\MainPage.png" alt="Welcome Modal" width="100%" />
 
 *Friendly onboarding experience explaining the 3-step process*
 
 ### Main Interface - Upload & Transform
-<img src="screenshots/main-interface.png" alt="Persona Studio Main Interface" width="100%" />
+<img src="screenshots\WelcomePage.png" alt="Persona Studio Main Interface" width="100%" />
 
 *Clean, intuitive interface with upload area and helpful tips for best results*
-
-<img width="1850" height="903" alt="image" src="https://github.com/user-attachments/assets/d234a248-1d9f-4a9f-9e55-83e5ddd93700" />
-
 
 </div>
 
@@ -116,8 +113,7 @@
 | Outdoor Photo | Tech Office | Modern Business Portrait |
 | Home Photo | Creative Studio | Artistic Profile |
 
-<img width="1852" height="892" alt="image" src="https://github.com/user-attachments/assets/5b1f07ce-8d16-4556-92be-c8b98d964e3d" />
-
+*Add your own screenshots here after deployment*
 
 </div>
 
