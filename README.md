@@ -13,6 +13,8 @@
 [Live Demo](https://persona-studio.vercel.app) • [Report Bug](https://github.com/RishabhBatra-01/persona-studio/issues) • [Request Feature](https://github.com/RishabhBatra-01/persona-studio/issues)
 
 <img src="https://via.placeholder.com/1200x600/0A0E1A/3B82F6?text=Persona+Studio+Demo+Screenshot" alt="Persona Studio Demo" width="100%" />
+<img width="1850" height="903" alt="image" src="https://github.com/user-attachments/assets/d234a248-1d9f-4a9f-9e55-83e5ddd93700" />
+
 
 </div>
 
