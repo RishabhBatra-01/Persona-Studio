@@ -30,6 +30,9 @@
 
 *Clean, intuitive interface with upload area and helpful tips for best results*
 
+<img width="1850" height="903" alt="image" src="https://github.com/user-attachments/assets/d234a248-1d9f-4a9f-9e55-83e5ddd93700" />
+
+
 </div>
 
 ---
@@ -113,7 +116,8 @@
 | Outdoor Photo | Tech Office | Modern Business Portrait |
 | Home Photo | Creative Studio | Artistic Profile |
 
-*Add your own screenshots here after deployment*
+<img width="1852" height="892" alt="image" src="https://github.com/user-attachments/assets/5b1f07ce-8d16-4556-92be-c8b98d964e3d" />
+
 
 </div>
 
