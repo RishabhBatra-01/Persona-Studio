@@ -97,7 +97,8 @@
 | Outdoor Photo | Tech Office | Modern Business Portrait |
 | Home Photo | Creative Studio | Artistic Profile |
 
-*Add your own screenshots here after deployment*
+<img width="1852" height="892" alt="image" src="https://github.com/user-attachments/assets/5b1f07ce-8d16-4556-92be-c8b98d964e3d" />
+
 
 </div>
 
