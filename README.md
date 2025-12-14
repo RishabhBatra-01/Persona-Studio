@@ -59,9 +59,6 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-**📖 Detailed Setup:** See [SETUP.md](SETUP.md) for complete setup instructions  
-**⚡ Super Quick:** See [QUICKSTART.md](QUICKSTART.md) for 2-minute setup
-
 ### Getting Your API Key
 
 1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
