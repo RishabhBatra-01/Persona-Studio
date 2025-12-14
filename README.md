@@ -2,7 +2,7 @@
 
 > Transform casual selfies into professional headshots in seconds using AI
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://persona-studio.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://persona-studio-puce.vercel.app)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-19.0-61dafb.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
