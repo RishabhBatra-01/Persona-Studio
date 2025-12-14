@@ -1,5 +1,6 @@
 <div align="center">
 
+
 # 🎨 Persona Studio
 
 ### Transform Casual Selfies into Professional Headshots with AI
@@ -21,12 +22,12 @@
 <div align="center">
 
 ### Welcome Modal - First-Time Experience
-<img src="screenshots\MainPage.png" alt="Welcome Modal" width="100%" />
+<img src="screenshots\WelcomePage.png" alt="Welcome Modal" width="100%" />
 
 *Friendly onboarding experience explaining the 3-step process*
 
 ### Main Interface - Upload & Transform
-<img src="screenshots\WelcomePage.png" alt="Persona Studio Main Interface" width="100%" />
+<img src="screenshots\MainPage.png" alt="Persona Studio Main Interface" width="100%" />
 
 *Clean, intuitive interface with upload area and helpful tips for best results*
 
