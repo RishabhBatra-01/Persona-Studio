@@ -17,23 +17,7 @@
 
 ---
 
-## 📸 Screenshots
 
-<div align="center">
-
-### Welcome Modal - First-Time Experience
-<img src="screenshots\WelcomePage.png" alt="Welcome Modal" width="100%" />
-
-*Friendly onboarding experience explaining the 3-step process*
-
-### Main Interface - Upload & Transform
-<img src="screenshots\MainPage.png" alt="Persona Studio Main Interface" width="100%" />
-
-*Clean, intuitive interface with upload area and helpful tips for best results*
-
-</div>
-
----
 
 ## 📖 Table of Contents
 
@@ -106,15 +90,19 @@
 ### Live Application
 **[Try Persona Studio Now →](https://persona-studio-puce.vercel.app)**
 
-### Example Transformations
+---
 
-| Original | Style | Result |
-|----------|-------|--------|
-| Casual Selfie | Corporate Professional | Professional Headshot |
-| Outdoor Photo | Tech Office | Modern Business Portrait |
-| Home Photo | Creative Studio | Artistic Profile |
+### Welcome Modal - First-Time Experience
+<img src="screenshots/WelcomePage.png" alt="Welcome Modal" width="100%" />
 
-*Add your own screenshots here after deployment*
+*Friendly onboarding experience explaining the 3-step process*
+
+---
+
+### Main Interface - Upload & Transform
+<img src="screenshots/MainPage.png" alt="Persona Studio Main Interface" width="100%" />
+
+*Clean, intuitive interface with upload area and helpful tips for best results*
 
 </div>
 
