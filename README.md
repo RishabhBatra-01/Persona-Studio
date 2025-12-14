@@ -12,7 +12,23 @@
 
 [Live Demo](https://persona-studio.vercel.app) • [Report Bug](https://github.com/RishabhBatra-01/persona-studio/issues) • [Request Feature](https://github.com/RishabhBatra-01/persona-studio/issues)
 
-<img src="https://via.placeholder.com/1200x600/0A0E1A/3B82F6?text=Persona+Studio+Demo+Screenshot" alt="Persona Studio Demo" width="100%" />
+</div>
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+
+### Welcome Modal - First-Time Experience
+<img src="screenshots/welcome-modal.png" alt="Welcome Modal" width="100%" />
+
+*Friendly onboarding experience explaining the 3-step process*
+
+### Main Interface - Upload & Transform
+<img src="screenshots/main-interface.png" alt="Persona Studio Main Interface" width="100%" />
+
+*Clean, intuitive interface with upload area and helpful tips for best results*
 
 </div>
 
@@ -87,7 +103,7 @@
 <div align="center">
 
 ### Live Application
-**[Try Persona Studio Now →](https://persona-studio.vercel.app)**
+**[Try Persona Studio Now →](https://persona-studio-puce.vercel.app)**
 
 ### Example Transformations
 
