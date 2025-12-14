@@ -1,0 +1,87 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+
+# Production build
+dist/
+dist-ssr/
+build/
+out/
+
+# Environment variables (CRITICAL - DO NOT COMMIT!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# Package manager
+.npm
+.yarn/
+.pnpm-store/
+yarn.lock
+package-lock.json
+
+# Optional: Keep package-lock.json if you want consistent installs
+# Remove the line above if you want to commit package-lock.json
+
+# Vercel
+.vercel
+
+# Local development
+*.local
+
+# Debug
+.vscode/launch.json
+
+# Misc
+.eslintcache
+.stylelintcache

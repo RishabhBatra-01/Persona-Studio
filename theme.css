@@ -1,0 +1,264 @@
+/* Theme-aware utility classes */
+
+/* Text colors */
+.text-theme-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-theme-tertiary {
+  color: var(--text-tertiary) !important;
+}
+
+.text-theme-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Background colors */
+.bg-theme-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-theme-surface {
+  background-color: var(--bg-surface) !important;
+}
+
+.bg-theme-hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.bg-theme-elevated {
+  background-color: var(--bg-elevated) !important;
+}
+
+/* Border colors */
+.border-theme {
+  border-color: var(--border-color) !important;
+}
+
+.border-theme-hover:hover {
+  border-color: var(--border-hover) !important;
+}
+
+/* Accent colors */
+.text-accent {
+  color: var(--accent-blue) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-blue) !important;
+}
+
+.bg-accent-hover:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+/* Status colors */
+.text-success {
+  color: var(--success) !important;
+}
+
+.text-error {
+  color: var(--error) !important;
+}
+
+.text-warning {
+  color: var(--warning) !important;
+}
+
+/* Transitions */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Component-specific overrides - Enhanced for light theme */
+[data-theme="light"] .glass-panel {
+  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.08), 
+              0 2px 8px rgba(0, 0, 0, 0.04),
+              0 0 0 1px rgba(59, 130, 246, 0.04);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+}
+
+[data-theme="light"] .card-surface {
+  box-shadow: 0 2px 16px rgba(59, 130, 246, 0.06), 
+              0 1px 4px rgba(0, 0, 0, 0.04);
+  background: #FFFFFF;
+}
+
+[data-theme="light"] .card-surface:hover {
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.12), 
+              0 4px 12px rgba(0, 0, 0, 0.06);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .glass-panel,
+[data-theme="dark"] .card-surface {
+  box-shadow: none;
+}
+
+/* Image containers - ensure visibility in both themes */
+[data-theme="light"] img {
+  border-radius: inherit;
+}
+
+/* Ensure proper contrast for interactive elements */
+[data-theme="light"] button:not(.bg-accent):not(.bg-blue-600) {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="light"] button:not(.bg-accent):not(.bg-blue-600):hover {
+  background-color: var(--bg-hover);
+  border-color: var(--border-hover);
+}
+
+/* Toast notifications */
+[data-theme="light"] .toast-success {
+  background-color: rgba(5, 150, 105, 0.1);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+[data-theme="light"] .toast-error {
+  background-color: rgba(220, 38, 38, 0.1);
+  border-color: var(--error);
+  color: var(--error);
+}
+
+[data-theme="light"] .toast-info {
+  background-color: rgba(37, 99, 235, 0.1);
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+/* Enhanced Light Theme Styling */
+
+/* Beautiful header in light mode */
+[data-theme="light"] header.glass-panel {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 24px rgba(59, 130, 246, 0.1), 
+              0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Upload area enhancement */
+[data-theme="light"] .card-surface {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFF 100%);
+  border: 2px solid rgba(59, 130, 246, 0.1);
+}
+
+/* Style cards in light mode */
+[data-theme="light"] .card-surface:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #EEF2FF 100%);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Input fields in light mode */
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background: #F8FAFF !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  background: #FFFFFF !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Modal in light mode */
+[data-theme="light"] .modal-backdrop {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* Footer in light mode */
+[data-theme="light"] footer {
+  background: linear-gradient(180deg, transparent 0%, rgba(248, 250, 255, 0.8) 100%);
+  border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+/* API Stats badge in light mode */
+[data-theme="light"] .api-stats-badge {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.12), 
+              0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+/* Loading overlay in light mode */
+[data-theme="light"] .loading-spinner {
+  filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.2));
+}
+
+/* Subtle accent on interactive elements */
+[data-theme="light"] button:hover:not(.bg-blue-600):not([disabled]) {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F4FF 100%);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+/* Beautiful scrollbar for light mode */
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: #F8FAFF;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #C7D2FE 0%, #A5B4FC 100%);
+  border-radius: 4px;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #A5B4FC 0%, #818CF8 100%);
+}
+
+/* Add subtle animation to cards */
+[data-theme="light"] .card-surface,
+[data-theme="light"] .glass-panel {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhance text readability */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3 {
+  color: #1E293B;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+/* Beautiful selection color */
+[data-theme="light"] ::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: #1E293B;
+}
+
+/* Welcome Modal - Dark Theme Fix */
+[data-theme="dark"] .welcome-modal-backdrop {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(20px);
+}
+
+[data-theme="dark"] .welcome-modal-content {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Light Theme Welcome Modal */
+[data-theme="light"] .welcome-modal-backdrop {
+  background: rgba(15, 23, 42, 0.6) !important;
+  backdrop-filter: blur(16px);
+}
+
+[data-theme="light"] .welcome-modal-content {
+  background: #ffffff !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25) !important;
+}

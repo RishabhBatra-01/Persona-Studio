@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Transform casual selfies into professional headshots instantly using AI. Powered by Google Gemini.">
+    <meta name="theme-color" content="#020617">
+    <title>Persona Studio - Professional AI Headshots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Dark Theme (Default) */
+        --bg-primary: #0A0E1A;
+        --bg-surface: #141B2D;
+        --bg-hover: #1A2332;
+        --bg-elevated: #1E2A3D;
+        --text-primary: #F8FAFC;
+        --text-secondary: #94A3B8;
+        --text-tertiary: #64748B;
+        --text-muted: #475569;
+        --border-color: #1E293B;
+        --border-hover: #334155;
+        --accent-blue: #3B82F6;
+        --accent-hover: #2563EB;
+        --success: #10B981;
+        --error: #EF4444;
+        --warning: #F59E0B;
+        --shadow: rgba(0, 0, 0, 0.3);
+        --overlay: rgba(0, 0, 0, 0.5);
+      }
+
+      [data-theme="light"] {
+        /* Light Theme - Enhanced Beautiful Version */
+        --bg-primary: linear-gradient(135deg, #F0F4FF 0%, #E8F0FE 50%, #F8FAFF 100%);
+        --bg-surface: #FFFFFF;
+        --bg-hover: #F8FAFF;
+        --bg-elevated: #FFFFFF;
+        --text-primary: #1E293B;
+        --text-secondary: #475569;
+        --text-tertiary: #64748B;
+        --text-muted: #94A3B8;
+        --border-color: #E0E7FF;
+        --border-hover: #C7D2FE;
+        --accent-blue: #3B82F6;
+        --accent-hover: #2563EB;
+        --success: #10B981;
+        --error: #EF4444;
+        --warning: #F59E0B;
+        --shadow: rgba(59, 130, 246, 0.08);
+        --overlay: rgba(15, 23, 42, 0.4);
+        --surface-bg: #FFFFFF;
+        --input-bg: #F8FAFF;
+      }
+
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        overflow-x: hidden;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      /* Modern Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg-primary);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border-color);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--border-hover);
+      }
+
+      /* Animations */
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px) scale(0.98); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      @keyframes slide-in {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes blob {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -50px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.9); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+
+      .animate-fade-in {
+        animation: fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+      .animate-slide-in {
+        animation: slide-in 0.4s ease-out forwards;
+      }
+      .animate-blob {
+        animation: blob 10s infinite;
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+      
+      .glass-panel {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      
+      .card-surface {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      
+      .theme-toggle-btn {
+        background: var(--bg-surface);
+        border: 1px solid var(--border-color);
+      }
+      
+      .theme-toggle-btn:hover {
+        background: var(--bg-hover);
+        border-color: var(--border-hover);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="/theme.css">
+</head>
+  <body>
+    <!-- Beautiful Background - Theme aware -->
+    <div class="fixed inset-0 z-[-1]" id="theme-bg"></div>
+    <div id="root"></div>
+    <script>
+      // Update background based on theme
+      function updateBackground() {
+        const bg = document.getElementById('theme-bg');
+        const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+        if (isDark) {
+          bg.style.background = '#0A0E1A';
+        } else {
+          bg.style.background = 'linear-gradient(135deg, #F0F4FF 0%, #E8F0FE 50%, #F8FAFF 100%)';
+        }
+      }
+      updateBackground();
+      // Watch for theme changes
+      const observer = new MutationObserver(updateBackground);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
