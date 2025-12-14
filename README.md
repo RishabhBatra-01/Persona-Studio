@@ -141,51 +141,9 @@ persona-studio/
 
 ## ⚙️ Configuration
 
-### Environment Variables
-
-Create a `.env.local` file (optional):
-
-```env
-# Optional: Pre-configure API key (not recommended for security)
-VITE_API_KEY=your_api_key_here
-```
-
 **Note:** Users should provide their own API keys through the app interface for security.
 
-### Build Configuration
 
-The app uses Vite with the following configuration:
-
-```json
-{
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  }
-}
-```
-
-Or manually:
-
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-
-# Deploy to production
-vercel --prod
-```
-
-
-
-- **Netlify:** Drag & drop the `dist` folder
-- **GitHub Pages:** Use `gh-pages` package
-- **Cloudflare Pages:** Connect your GitHub repo
-
-See [VERCEL_DEPLOYMENT_GUIDE.md](docs/VERCEL_DEPLOYMENT_GUIDE.md) for detailed instructions.
 
 ## 📊 Performance
 
@@ -251,23 +209,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Vite** - Lightning-fast build tool
 - **Vercel** - Seamless deployment platform
 
-## 📚 Documentation
-
-- [Custom Style Guide](docs/CUSTOM_STYLE_GUIDE.md) - How to use custom styles
-- [Deployment Guide](docs/VERCEL_DEPLOYMENT_GUIDE.md) - Deploy to Vercel
-- [Monetization Guide](docs/DEPLOYMENT_AND_MONETIZATION_GUIDE.md) - Earn from your app
-- [Demo Script](docs/DEMO_SCRIPT.md) - Present the app professionally
-- [UX Improvements](docs/UX_IMPROVEMENTS_IMPLEMENTED.md) - Latest enhancements
-
 ## 🌟 Star History
 
 If you find this project useful, please consider giving it a star! ⭐
-
-## 📧 Contact
-
-- **GitHub:** [@yourusername](https://github.com/yourusername)
-- **Email:** your.email@example.com
-- **Twitter:** [@yourhandle](https://twitter.com/yourhandle)
 
 ## 🗺️ Roadmap
 
@@ -288,7 +232,7 @@ If you find this project helpful, consider:
 - 🐛 Reporting bugs
 - 💡 Suggesting features
 - 🤝 Contributing code
-- ☕ [Buy me a coffee](https://buymeacoffee.com/yourusername)
+
 
 ## 📈 Stats
 
