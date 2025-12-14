@@ -166,12 +166,6 @@ The app uses Vite with the following configuration:
 }
 ```
 
-## 🚀 Deployment
-
-### Deploy to Vercel (Recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/persona-studio)
-
 Or manually:
 
 ```bash
@@ -185,7 +179,7 @@ vercel
 vercel --prod
 ```
 
-### Other Platforms
+
 
 - **Netlify:** Drag & drop the `dist` folder
 - **GitHub Pages:** Use `gh-pages` package
