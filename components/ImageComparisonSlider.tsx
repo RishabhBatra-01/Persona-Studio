@@ -77,13 +77,13 @@ export const ImageComparisonSlider: React.FC<ImageComparisonSliderProps> = ({ be
         />
         
         {/* Label on Before Side */}
-        <div className="absolute top-4 left-4 bg-black/60 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-full backdrop-blur-md pointer-events-none border border-white/10">
+        <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-black/60 text-white text-[8px] md:text-[10px] uppercase font-bold tracking-widest px-2 py-1 md:px-3 md:py-1.5 rounded-full backdrop-blur-md pointer-events-none border border-white/10">
           Original
         </div>
       </div>
       
       {/* Label on After Side (Only visible if slider allows) */}
-      <div className="absolute top-4 right-4 bg-blue-600/60 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1.5 rounded-full backdrop-blur-md pointer-events-none border border-white/10">
+      <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-blue-600/60 text-white text-[8px] md:text-[10px] uppercase font-bold tracking-widest px-2 py-1 md:px-3 md:py-1.5 rounded-full backdrop-blur-md pointer-events-none border border-white/10">
         AI Result
       </div>
 
@@ -93,8 +93,8 @@ export const ImageComparisonSlider: React.FC<ImageComparisonSliderProps> = ({ be
         style={{ left: `${sliderPosition}%` }}
       >
         {/* Slider Knob */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-xl text-slate-900 transition-transform group-active:scale-110">
-           <svg className="w-5 h-5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-xl text-slate-900 transition-transform group-active:scale-110">
+           <svg className="w-4 h-4 md:w-5 md:h-5 text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
            </svg>
         </div>

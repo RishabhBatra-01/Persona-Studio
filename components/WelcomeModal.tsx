@@ -11,7 +11,7 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose, onG
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 animate-fade-in">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center p-3 md:p-4 animate-fade-in">
       {/* Backdrop */}
       <div 
         className="welcome-modal-backdrop absolute inset-0"
@@ -20,11 +20,11 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose, onG
       
       {/* Modal */}
       <div 
-        className="welcome-modal-content relative w-full max-w-2xl rounded-3xl overflow-hidden animate-fade-in z-10"
+        className="welcome-modal-content relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl md:rounded-3xl overflow-hidden animate-fade-in z-10"
         style={{ animationDuration: '0.3s' }}
       >
         {/* Header with gradient */}
-        <div className="relative h-48 bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 flex items-center justify-center overflow-hidden">
+        <div className="relative h-36 md:h-48 bg-gradient-to-br from-blue-600 via-blue-500 to-indigo-600 flex items-center justify-center overflow-hidden">
           {/* Animated background blobs */}
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl animate-blob"></div>
@@ -32,55 +32,55 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose, onG
           </div>
           
           <div className="relative text-center z-10">
-            <div className="w-20 h-20 mx-auto bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-4 shadow-lg">
-              <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white/20 backdrop-blur-sm rounded-2xl md:rounded-3xl flex items-center justify-center mb-3 md:mb-4 shadow-lg">
+              <svg className="w-8 h-8 md:w-10 md:h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
               </svg>
             </div>
-            <h1 className="text-3xl font-bold text-white mb-2">Welcome to Persona Studio</h1>
-            <p className="text-blue-100 text-lg">Transform selfies into professional headshots</p>
+            <h1 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2">Welcome to Persona Studio</h1>
+            <p className="text-blue-100 text-base md:text-lg">Transform selfies into professional headshots</p>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-6">
+        <div className="p-5 md:p-8 space-y-5 md:space-y-6">
           <div className="text-center space-y-2">
-            <h2 className="text-2xl font-bold text-theme-primary">How It Works</h2>
-            <p className="text-theme-secondary">Get professional headshots in 3 simple steps</p>
+            <h2 className="text-xl md:text-2xl font-bold text-theme-primary">How It Works</h2>
+            <p className="text-theme-secondary text-sm md:text-base">Get professional headshots in 3 simple steps</p>
           </div>
 
           {/* Steps */}
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-3 md:gap-6">
             {/* Step 1 */}
-            <div className="text-center space-y-3">
-              <div className="w-16 h-16 mx-auto bg-blue-500/10 rounded-2xl flex items-center justify-center">
-                <span className="text-3xl">📸</span>
+            <div className="text-center space-y-2 md:space-y-3">
+              <div className="w-12 h-12 md:w-16 md:h-16 mx-auto bg-blue-500/10 rounded-xl md:rounded-2xl flex items-center justify-center">
+                <span className="text-xl md:text-3xl">📸</span>
               </div>
               <div>
-                <h3 className="font-bold text-theme-primary mb-1">1. Upload Photo</h3>
-                <p className="text-sm text-theme-secondary">Upload a casual selfie or portrait</p>
+                <h3 className="font-bold text-theme-primary text-xs md:text-base mb-0.5 md:mb-1">1. Upload Photo</h3>
+                <p className="text-[10px] md:text-sm text-theme-secondary hidden sm:block">Upload a casual selfie or portrait</p>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="text-center space-y-3">
-              <div className="w-16 h-16 mx-auto bg-purple-500/10 rounded-2xl flex items-center justify-center">
-                <span className="text-3xl">🎨</span>
+            <div className="text-center space-y-2 md:space-y-3">
+              <div className="w-12 h-12 md:w-16 md:h-16 mx-auto bg-purple-500/10 rounded-xl md:rounded-2xl flex items-center justify-center">
+                <span className="text-xl md:text-3xl">🎨</span>
               </div>
               <div>
-                <h3 className="font-bold text-theme-primary mb-1">2. Choose Style</h3>
-                <p className="text-sm text-theme-secondary">Pick from professional styles</p>
+                <h3 className="font-bold text-theme-primary text-xs md:text-base mb-0.5 md:mb-1">2. Choose Style</h3>
+                <p className="text-[10px] md:text-sm text-theme-secondary hidden sm:block">Pick from professional styles</p>
               </div>
             </div>
 
             {/* Step 3 */}
-            <div className="text-center space-y-3">
-              <div className="w-16 h-16 mx-auto bg-emerald-500/10 rounded-2xl flex items-center justify-center">
-                <span className="text-3xl">✨</span>
+            <div className="text-center space-y-2 md:space-y-3">
+              <div className="w-12 h-12 md:w-16 md:h-16 mx-auto bg-emerald-500/10 rounded-xl md:rounded-2xl flex items-center justify-center">
+                <span className="text-xl md:text-3xl">✨</span>
               </div>
               <div>
-                <h3 className="font-bold text-theme-primary mb-1">3. Get Result</h3>
-                <p className="text-sm text-theme-secondary">Download your headshot in seconds</p>
+                <h3 className="font-bold text-theme-primary text-xs md:text-base mb-0.5 md:mb-1">3. Get Result</h3>
+                <p className="text-[10px] md:text-sm text-theme-secondary hidden sm:block">Download your headshot in seconds</p>
               </div>
             </div>
           </div>
